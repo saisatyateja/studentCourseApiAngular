@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url('https://wallpapercave.com/wp/wp8149811.jpg');
+    background-size: cover; /* Adjust the image size to cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent image repetition */
+  }
