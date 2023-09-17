@@ -1,0 +1,43 @@
+/* Style the table */
+table {
+  width: 100%;
+  font-weight: bold;
+  border:1px solid blue;
+  border-spacing: 0;
+  font-family: Arial, sans-serif;background-color: azure;
+}
+
+/* Style the table header (th) */
+th {
+  background-color: #007bff; /* Header background color */
+  color: #fff; /* Header text color */
+  font-weight: bold; /* Bold font */
+  text-align: center; /* Left-align text */
+  padding: 10px; /* Padding for cells */
+  border: 2px solid #0056b3;
+  border-bottom: 3px solid #0056b3; /* Header border color */
+}
+
+/* Style the table data cells (td) */
+td {
+  padding: 10px; /* Padding for cells */
+  border: 1px solid #ddd; /* Cell border color */
+}
+
+/* Alternate row background color */
+tr:nth-child(even) {
+  background-color: #b0a6c2; /* Alternate row background color */
+}
+
+/* Hover effect on rows */
+tr:hover {
+  background-color: #e66d48; /* Row background color on hover */
+}
+h1{
+  padding: 2px;
+  background: #007bff;
+  text-align: center;
+  text-decoration: dotted; 
+  font-weight: bold; 
+  color: azure;
+}

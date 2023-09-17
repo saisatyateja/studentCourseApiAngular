@@ -1,0 +1,23 @@
+<form class="custom-form" (ngSubmit)="onSubmit()">
+    <table>
+       <th colspan="2">ADD COURSE</th> 
+      <tr>
+        <td><label for="id">ID:</label></td>
+        <td><input type="text" id="id" name="id" [(ngModel)]="formData.id" required></td>
+      </tr>
+      <tr>
+        <td><label for="name">Course Name:</label></td>
+        <td><input type="text" id="name" name="name" [(ngModel)]="formData.name" required></td>
+      </tr>
+      <tr>
+        <td><label for="faculty">Faculty:</label></td>
+        <td><input type="text" id="faculty" name="faculty" [(ngModel)]="formData.faculty" required></td>
+      </tr>
+      <tr>
+        <td><label for="duration">Duration:</label></td>
+        <td><input type="text" id="duration" name="duration" [(ngModel)]="formData.duration" required></td>
+      </tr>
+    </table>
+    <button type="submit" class="custom-button">Submit</button>
+  </form>
+  

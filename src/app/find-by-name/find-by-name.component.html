@@ -1,0 +1,28 @@
+<div class="search">
+    <form class="custom-form" (ngSubmit)="onSubmit()">
+        <table>
+        <th colspan="2">Find Course By Name</th> 
+        <tr>
+            <td><label for="name">Course Name:</label></td>
+            <td><input type="text" id="name" name="name" [(ngModel)]="formData.name" required></td>
+        </tr>
+        <tr ><td colspan="2" align="right"><button class="custom-button" type="submit" class="custom-button">Find Course</button></td></tr>
+        </table>
+        
+    </form>
+</div>  
+<div class="result" *ngIf="showDiv">
+        
+    <table align="center" border="1" cellpadding="10px">
+        <th>Course Id </th><th>Course Name</th><th>Faculty</th><th>Duration</th>
+
+        <tr *ngFor="let item of apiData">
+                       
+            <td align="center">{{item.id}}</td>
+            <td align="center">{{item.name}}</td>
+            <td align="center">{{item.faculty}}</td>
+            <td align="center">{{item.duration}}</td>
+                
+        </tr>
+    </table>
+</div>

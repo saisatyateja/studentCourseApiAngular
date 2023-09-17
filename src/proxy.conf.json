@@ -1,0 +1,6 @@
+{
+    "/api": {
+        "target": "http://ip172-18-0-95-ck2449mfml8g00fogrtg-8080.direct.labs.play-with-docker.com/course/course",
+        "secure": false
+    }
+}

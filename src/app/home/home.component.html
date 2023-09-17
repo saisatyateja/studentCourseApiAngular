@@ -1,0 +1,67 @@
+<!-- <div style="padding: 13px;">
+   
+    <mat-spinner *ngIf="apiData.length === 0"></mat-spinner>
+    <mat-card *ngFor="let Data of apiData" style="margin-top:11px;">
+        <mat-card-header>
+            <mat-card-title>
+                <strong>Course Id :</strong>{{Data.id}} <br>
+                <strong>Course Name :</strong>{{Data.name}}<br>
+                <strong>Faculty :</strong>{{Data.faculty}}
+            </mat-card-title>            
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                <strong>Duration :</strong>{{Data.duration}}
+            </p>
+           </mat-card-content> 
+        
+    </mat-card>
+</div>  -->
+
+<body>
+    <!-- <div>
+        <table  mat-table [dataSource]="dataSource">
+           
+            <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef>Course ID  </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+            </ng-container>
+        
+            <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Course Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+        
+            <ng-container matColumnDef="faculty">
+            <th mat-header-cell *matHeaderCellDef> Faculty </th>
+            <td mat-cell *matCellDef="let element"> {{element.faculty}} </td>
+            </ng-container>
+        
+            <ng-container matColumnDef="duration">
+            <th mat-header-cell *matHeaderCellDef> Duration </th>
+            <td mat-cell *matCellDef="let element"> {{element.duration}} </td>
+            </ng-container>
+        
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div> -->
+    <h1 align="center" > <u>All Courses</u></h1>
+    
+    <div *ngIf="showDiv">
+        
+        <table align="center" border="1" cellpadding="10px">
+            <th>Course Id </th><th>Course Name</th><th>Faculty</th><th>Duration (days)</th>
+    
+            <tr *ngFor="let item of apiData">
+                           
+                <td align="center">{{item.id}}</td>
+                <td align="center">{{item.name}}</td>
+                <td align="center">{{item.faculty}}</td>
+                <td align="center">{{item.duration}}</td>
+                    
+            </tr>
+        </table>
+    </div>
+
+</body>
