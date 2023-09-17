@@ -4,4 +4,4 @@ WORKDIR /studentCourseAngular
 RUN npm install
 EXPOSE 4200
 ENTRYPOINT [ "ng" ]
-CMD [ "serve" , "--host","0.0.0.0","--port","4200"]
+CMD [ "serve" , "--host","0.0.0.0","--port","4200","--disableHostCheck","true" ]
