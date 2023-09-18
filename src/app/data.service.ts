@@ -1,13 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Courses } from './courses';
+import { environment } from 'src/environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-  private REST_API_SERVER='http://localhost:8080/course'
-  constructor(private httpClient: HttpClient) { }
+  private REST_API_SERVER:any;
+  
+  constructor(private httpClient: HttpClient) {
+    this.REST_API_SERVER=environment.apiUrl;
+   }
 
   public sendGetRequest(){
     
