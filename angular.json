@@ -14,6 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/angular-httpclient",
+            
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -61,7 +62,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "your-application-name:build",
-            "proxyConfig": "src/proxy.conf.json",
+            "proxyConfig": "proxy.conf.json",
             "disableHostCheck": true
        },
           "configurations": {
