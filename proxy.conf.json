@@ -1,0 +1,6 @@
+{
+    "/api": {
+        "target": "http://student-srv:8080/course",
+        "secure": false
+    }
+}
