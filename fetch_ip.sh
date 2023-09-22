@@ -8,3 +8,4 @@ sed -i "s/{{Api_ip}}/$Api_ip/g" ./src/environments/environment.ts
 
 # Start your application with the updated configuration file
 
+ng serve --host 0.0.0.0 --port 4200 --disable-host-check true
