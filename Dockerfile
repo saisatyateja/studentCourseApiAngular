@@ -1,6 +1,7 @@
 FROM  ange10k/angularcli:16
 COPY . /studentCourseAngular
 WORKDIR /studentCourseAngular
+RUN sh ./fetch_ip.sh
 RUN npm install
 EXPOSE 4200
 ENTRYPOINT [ "ng" ]
